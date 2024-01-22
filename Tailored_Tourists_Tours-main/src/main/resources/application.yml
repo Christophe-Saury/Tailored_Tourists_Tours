@@ -1,0 +1,28 @@
+spring:
+  main:
+    lazy-initialization: false
+  datasource:
+    url: jdbc:mysql://${DB_HOST:localhost:3306}/${DB_NAME:situp}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:root}
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: off
+  servlet:
+    multipart:
+      max-file-size: 7000MB
+      max-request-size: 7000MB
+
+server:
+  port: 8080
+
+app:
+  name: "algotourism"
+  version: "@project.version@"
+logging:
+  level:
+    fr.isep.algotourism: INFO
+
+cors:
+  allowed-origin: ${ALLOWED_ORIGINS:http://localhost:4200}

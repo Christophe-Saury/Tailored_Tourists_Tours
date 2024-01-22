@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tailored Tourist Tours</title>
+  <link rel="stylesheet" type="text/css" href="css/homepage_style.css">
+</head>
+<body>
+<header>
+  <h1>Tailored Tourist Tours</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="search.html">Search</a></li>
+      <li><a href="about_us.html">About us</a></li>
+      <li><a href="contact_us.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <h1 style="color:black;">Tour Itinerary Map</h1>
+  <div id="map"></div> <!-- faut changer le gg maps api key -->
+
+
+</main>
+
+<script>
+  function initMap() {
+    // Create a map centered on Paris
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 48.8566, lng: 2.3522},
+      zoom: 12
+    });
+
+    // Define an array of tour sites with their locations
+    var tourSites = [
+      {
+        name: "Eiffel Tower",
+        location: {lat: 48.8584, lng: 2.2945}
+      },
+      {
+        name: "Louvre Museum",
+        location: {lat: 48.8606, lng: 2.3376}
+      },
+      // Add more tour sites here
+    ];
+
+    // Create markers for each tour site
+    for (var i = 0; i < tourSites.length; i++) {
+      var site = tourSites[i];
+
+      var marker = new google.maps.Marker({
+        position: site.location,
+        map: map,
+        title: site.name
+      });
+    }
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+<footer>
+  <p>&copy; 2023 T3: Tailored Tourist Tours. All rights reserved.</p>
+</footer>
+</body>
+</html>

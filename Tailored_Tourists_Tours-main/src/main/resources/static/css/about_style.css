@@ -1,0 +1,75 @@
+/* about_style.css */
+
+/* Body and Typography */
+body {
+    background-color: #E5E5E5; /* Light Gray */
+    color: #000000; /* Black */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: #E5E5E5; /* Light Gray */
+  }
+  
+  h2 {
+    color: #000000; /* Black */
+  }
+  
+  /* Header */
+  header {
+    background-color: #14213D; /* Navy Blue */
+    color: #FFFFFF; /* White */
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999; /* Ensure header is on top of other elements */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #FFFFFF; /* White */
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%; /* Adjust as needed to leave space below the fixed header */
+    margin-bottom: 5%; /* Adjust as needed to leave space above the fixed footer */
+  }
+  
+  .about-content {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #000000; /* Black */
+    color: #FFFFFF; /* White */
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  

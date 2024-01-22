@@ -1,0 +1,203 @@
+/* Body and Typography */
+body {
+  min-height: 100vh; /* Ensure body takes at least the height of the viewport */
+  display: flex;
+  flex-direction: column;
+  background-color: #E5E5E5; /* Light Gray */
+  color: #000000; /* Black */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #14213D; /* Navy Blue */
+  color: #FFFFFF; /* White */
+  padding: 20px;
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #FFFFFF; /* White */
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Main Content */
+main {
+  flex: 1; /* Allow main content to grow and fill remaining space */
+  padding: 20px;
+}
+
+.tour-details {
+  margin-bottom: 30px;
+}
+
+.tour-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tour-description {
+  width: 60%;
+}
+
+.site-list {
+  margin-top: 30px;
+}
+
+.site-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.site-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.site-details {
+  width: 70%;
+  padding-left: 20px;
+}
+
+.tour-actions {
+  margin-top: 30px;
+}
+
+.tour-actions .button {
+  background-color: #FCA311; /* Orange */
+  color: #FFFFFF; /* White */
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.tour-actions .button:hover {
+  background-color: #14213D; /* Navy Blue */
+  color: #FFFFFF; /* White */
+}
+
+/* Footer */
+footer {
+  flex-shrink: 0; /* Prevent footer from shrinking */
+  background-color: #000000; /* Black */
+  color: #FFFFFF; /* White */
+  padding: 20px;
+  text-align: center;
+}
+
+.day {
+  position: relative;
+}
+
+.itinerary-button-container {
+  margin-top: 10px;
+}
+
+.itinerary-button {
+  display: block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 10%;
+}
+
+.itinerary-button:hover {
+  background-color: #555;
+}
+
+
+
+/* Loading Message */
+#loading-message {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #888;
+  margin: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .tour-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tour-description {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Adjust styles for even smaller screens */
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .tour-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tour-description {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.site-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #F1F1F1; /* Light Gray */
+  border-radius: 5px;
+}
+
+.site-details {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.site-details h5 {
+  margin: 0;
+}
+
+.site-details p {
+  margin: 0;
+}
+
+.site-details .site-name {
+  font-weight: bold;
+}
+
+.site-details .site-location {
+  color: #888888; /* Light Gray */
+}
+

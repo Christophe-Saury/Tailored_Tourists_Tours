@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tailored Tourist Tours - Search and Filter</title>
+    <link href="css/search_style.css" rel="stylesheet" type="text/css">
+    <script src="js/search.js"></script>
+</head>
+<body>
+<header>
+    <h1>Tailored Tourist Tours</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="about_us.html">About us</a></li>
+            <li><a href="contact_us.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="search-form">
+        <h2>Search and Filter</h2>
+        <form action="tour_details.html">
+            <div>
+                <label for="duration">Number of days of the trip:</label>
+                <input id="duration" name="duration" type="number" value="4">
+            </div>
+
+            <div>
+                <label for="location">Location:</label>
+                <input id="location" list="location-list" name="location" type="text">
+                <datalist id="location-list">
+                </datalist>
+            </div>
+            <br>
+
+            <br>
+            <div>
+                <label for="maxNbOfSites">Ideal number of sites per day:</label>
+                <input id="maxNbOfSites" name="maxNbOfSites" type="number" value="4">
+            </div>
+
+            <br>
+            <div>
+                <label for="siecle1">From century</label>
+                <input id="siecle1" max="21" min="1" name="siecle1" oninput="this.nextElementSibling.value = this.value"
+                       type="range"
+                       value="10">
+                <output>10</output>
+                <label for="siecle2">To century</label>
+                <input id="siecle2" max="21" min="1" name="siecle2" oninput="this.nextElementSibling.value = this.value"
+                       type="range"
+                       value="18">
+                <output>18</output>
+            </div>
+
+            <div>
+                <label for="excludeType">Exclude site:</label>
+                <select id="excludeType" name="excludeType">
+                    <option value="">Don't exclude a site type </option>
+                    <option value="BUILDING">Buildings</option>
+                    <option value="MUSEUM">Museums</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="submit" value="Search">
+            </div>
+        </form>
+    </section>
+    <br>
+    <!--
+    <section class="search-results">
+      <h2>Search Results</h2>
+      <ul>
+        <li>Result 1</li>
+        <li>Result 2</li>
+        <li>Result 3</li>
+      </ul>
+    </section> -->
+</main>
+
+<footer>
+    <p>&copy; 2023 T3: Tailored Tourist Tours. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "properties": [
+    {
+      "name": "app.name",
+      "type": "java.lang.String",
+      "description": "Application's name."
+    },
+    {
+      "name": "app.version",
+      "type": "java.lang.String",
+      "description": "Application's version."
+    },
+    {
+      "name": "jwt.secret",
+      "type": "java.lang.String",
+      "description": "Secret pass of the main JWT, DON'T USE DEFAULT VALUE."
+    },
+    {
+      "name": "jwt.token-duration",
+      "type": "java.lang.Integer",
+      "description": "JWT duration, in seconds."
+    },
+    {
+      "name": "jwt.issuer",
+      "type": "java.lang.String",
+      "description": "JWT issuer."
+    },
+    {
+      "name": "cors.allowed-origin",
+      "type": "java.lang.String",
+      "description": "CORS allowed origin."
+    }
+  ]
+}
