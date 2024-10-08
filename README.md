@@ -1,5 +1,5 @@
 # Tailored_Tourists_Tours
-...
+
 For a school project, me and one of my classmates were asked to build a webpage that would build tours for tourists looking to visit France.
 The webpage must implement an algorithm of our choosing and we had to justify our choice.
 
